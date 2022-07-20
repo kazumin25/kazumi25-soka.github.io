@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<title>創大イチャリバ</title>
+<meta name="description" content="プログラミング最終課題">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="gnav">
+        <ul>
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="introduction.html">パート紹介</a></li>
+            <li><a href="schedule.html">年間スケジュール</a></li>
+            <li><a href="https://www.instagram.com/soka_ichariba/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="main_visual">
+        <img src="../images/top.png" alt="イチャリバ全体写真">
+    </div>
+
+    <section class="section credo">
+        <h2 class="ttl">創価大学イチャリバチョーデーズとは</h2>
+    <div class="inner_min">
+        <p class="lead">沖縄の<span class="marker">伝統エイサー</span>を通して<span class="marker">平和</span>を訴えている部活です。</p>
+        <p>約160人の部員で活動しています。エイサーを踊るだけでなく、研鑽や勉強会で沖縄戦のことについて学んだり、歌詞の意味について学んだりしています。</p>
+        <p>沖縄県出身ではない人たちも多く、エイサー初心者がほとんどです。</p>
+    </div>
+    </section>
+    
+    <section class="section course">
+        <div class="item_wrap">
+        <div class="item">
+            <div class="item_img">
+            <a href="introduction.html"><img src="../images/IMG_2981.JPG" alt="女手写真"></a>
+            </div>
+            <h3 class="item_ttl"><a href="introduction.html">パート紹介</a></h3>
+            <p>５つのメインパートと多くの特殊パートがあります。</p>
+        </div>
+        <div class="item">
+            <div class="item_img">
+            <a href="schedule.html"><img src="../images/IMG_2989.JPG" alt="練習写真"></a>
+            </div>
+            <h3 class="item_ttl"><a href="schedule.html">年間スケジュール</a></h3>
+            <p>イチャリバの1年間の流れを説明します。</p>
+        </div>
+        </div>
+    </section>
+
+    <div class="totop"><a href="#top">トップへ戻る</a></div>
+        <footer>
+            <ul class="footer_nav">
+                <li><a href="home.html">ホーム</a></li>
+                <li><a href="introduction.html">パート紹介</a></li>
+                <li><a href="schedule.html">年間スケジュール</a></li>
+                <li><a href="https://www.instagram.com/soka_ichariba/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </ul>
+                <div class="copy"><small>&copy; soka univercity</small></div>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+        $('a[href^="#"]').click(function () {
+            var speed = 500;
+            var href = $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+            return false;
+        });
+        });
+        $(function () {
+        $('.toggle').click(function () {
+        $(this).toggleClass('active');
+            if ($(this).hasClass('active')) {
+        $('.gnav').addClass('active');
+        } else {
+        $('.gnav').removeClass('active');
+        }
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<title>創大イチャリバ</title>
+<meta name="description" content="プログラミング最終課題">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="gnav">
+        <ul>
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="introduction.html">パート紹介</a></li>
+            <li><a href="schedule.html">年間スケジュール</a></li>
+            <li><a href="https://www.instagram.com/soka_ichariba/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <section class="head_intro">
+        <h2 class="ttl">パート紹介</h2>
+    <div class="inner_min">
+        <p>基本パートは５つあります。パートごとにそれぞれ魅力があり、部員は基本パートを１つ決め、専属パートとして極めていきます。</p>
+        <p>他にも多くの特殊パートがあります。ここには記載していません。</p>
+    </div>
+    </section>
+
+    <section class="section message">
+        <div class="inner_min">
+            <img src="../images/IMG_2957 2.jpg" alt="女手" class="part_img_l">
+            <h2 class="ttl">女手</h2>
+            <p>女手は女の人しかできないパートで、楽器を持たずに踊ります。沖縄らしい華やかな衣装を着て、手首や指先を使った柔らかい動きが特徴的な「手踊り」をします。</p>
+        </div>
+    </section>
+    <section class="section message">
+        <div class="inner_min">
+            <img src="../images/IMG_2966 2.jpg" alt="男手" class="part_img_r">
+            <h2 class="ttl">男手</h2>
+            <p>男手は、楽器を使わずに琉球空手を用いる舞踊ることを指します。イチャリバでは、最前列で踊ることが多いパートです。</p>
+        </div>
+    </section>
+    <section class="section message">
+        <div class="inner_min">
+            <img src="../images/IMG_2975 2.jpg" alt="パーランクー" class="part_img_l">
+            <h2 class="ttl">パーランクー</h2>
+            <p>通称パーラン。パーランクーとは片手で持つことができる小型の太鼓で、軽くてハリのある高い音を響かせます。小型で扱いやすい楽器であるため、体をリズムよく動かしながら軽やかなパフォーマンスをすることができます。</p>
+        </div>
+    </section>
+    <section class="section message">
+        <div class="inner_min">
+            <img src="../images/IMG_2968 2.jpg" alt="締太鼓" class="part_img_r">
+            <h2 class="ttl">締太鼓</h2>
+            <p>締め太鼓は、顔より少し大きいサイズの太鼓を使って踊ります。叩き方次第で大きく見せたり、繊細に見せることもできます。</p>
+        </div>
+    </section>
+    <section class="section message">
+        <div class="inner_min">
+            <img src="../images/IMG_2972 2.jpg" alt="大太鼓" class="part_img_l">
+            <h2 class="ttl">大太鼓</h2>
+            <p>締太鼓やパーランクーを一年間基礎を学べば、二年から大太鼓を練習することができます。大太鼓は音と声の存在感で舞台全体を引っ張っていきます。</p>
+        </div>
+    </section>
+    <section class="section message">
+        <div class="inner_min">
+            <img src="../images/IMG_2980 2.jpg" alt="エーク" class="part_img_r">
+            <h2 class="ttl">エーク</h2>
+            <p>エークは沖縄の漁で使っていたサバニという船があり、それを漕ぐオールのことをエークと言います。</p>
+        </div>  
+    </section>
+    <section class="section message">
+    <div class="inner_min">
+        <img src="../images/IMG_2983 2.jpg" alt="旗" class="part_img_l">
+        <h2 class="ttl">旗</h2>
+        <p>旗は三色旗（赤、黄色、青）があり、創価大学イチャリバチョーデーズにしかないパートになっています。</p>
+    </div>
+</section>
+
+
+    <div class="totop"><a href="#top">トップへ戻る</a></div>
+    <footer>
+        <ul class="footer_nav">
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="introduction.html">パート紹介</a></li>
+            <li><a href="schedule.html">年間スケジュール</a></li>
+            <li><a href="https://www.instagram.com/soka_ichariba/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </ul>
+    <div class="copy"><small>&copy; soka univercity</small></div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+        $('a[href^="#"]').click(function () {
+            var speed = 500;
+            var href = $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({ scrollTop: position }, speed, 'swing');
+            return false;
+        });
+    });
+      // ハンバーガー
+    $(function () {
+        $('.toggle').click(function () {
+            $(this).toggleClass('active');
+            if ($(this).hasClass('active')) {
+            $('.gnav').addClass('active');
+            } else {
+            $('.gnav').removeClass('active');
+            }
+        });
+    });
+    </script>
+
+
+</body>
+
+</html>

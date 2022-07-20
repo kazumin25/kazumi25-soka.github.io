@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<title>創大イチャリバ</title>
+<meta name="description" content="プログラミング最終課題">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+   <nav class="gnav">
+      <ul>
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="introduction.html">パート紹介</a></li>
+            <li><a href="schedule.html">年間スケジュール</a></li>
+            <li><a href="https://www.instagram.com/soka_ichariba/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+      </ul>
+   </nav>
+   <div class="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+   </div>
+
+   <section class="head_sche">
+      <h2 class="ttl">年間スケジュール</h2>
+   <div class="inner_min">
+      <p>イチャリバは多くのイベントに参加しています。外部の依頼舞台にも積極的に参加しています。放課後のパートごとに基礎練習を行ったり、舞台前は舞台練習を行っています。</p>
+      <p></p>
+   </div>
+   </section>
+
+   <div>
+      <section class="section">
+            <h2 class="ttl">1年間の流れ</h2>
+            <table class="company inner_min">
+            <tr>
+               <th>4月~5月</th>
+                  <td>新歓・仮入部期間・イチャスポ</td>
+            </tr>
+            <tr>
+               <th>8月~9月</th>
+                  <td>6.23沖縄慰霊の日平和記念イベント</td>
+            </tr>
+            <tr>
+               <th>10月</th>
+                  <td>創大祭・ウチナーンチュー大会</td>
+            </tr>
+            <tr>
+               <th>12月</th>
+                  <td>カチャーシー祭</td>
+            </tr>
+            <tr>
+               <th>1月</th>
+               <td>執行選挙</td>
+            </tr>
+            <tr>
+               <th>3月</th>
+               <td>卒業生舞台</td>
+            </tr>
+            </table>
+      </section>
+
+   <div class="totop"><a href="#top">トップへ戻る</a></div>
+   <footer>
+      <ul class="footer_nav">
+         <li><a href="home.html">ホーム</a></li>
+         <li><a href="introduction.html">パート紹介</a></li>
+         <li><a href="schedule.html">年間スケジュール</a></li>
+         <li><a href="https://www.instagram.com/soka_ichariba/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </ul>
+      <div class="copy"><small>&copy; soka univercity</small></div>
+   </footer>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script>
+      $(function () {
+      $('a[href^="#"]').click(function () {
+            var speed = 500;
+            var href = $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+      $('body,html').animate({ scrollTop: position }, speed, 'swing');
+      return false;
+      });
+      });
+      $(function () {
+      $('.toggle').click(function () {
+      $(this).toggleClass('active');
+         if ($(this).hasClass('active')) {
+      $('.gnav').addClass('active');
+      } else {
+      $('.gnav').removeClass('active');
+      }
+      });
+      });
+   </script>
+</body>
+
+
